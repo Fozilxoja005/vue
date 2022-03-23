@@ -1,0 +1,116 @@
+.header-top{
+    animation: bg 7s linear infinite;
+}
+@keyframes bg {
+    0%{
+        background: linear-gradient(90.09deg, #3800AF, #BF7204, #C27500, #C27500);
+    }
+    25%{
+        background: linear-gradient(90.09deg,#BF7204, #3800AF,  #C27500, #C27500);
+    }
+    50%{
+        background: linear-gradient(90.09deg,#BF7204, #C27500, #3800AF,  #C27500);
+    }
+    75%{
+        background: linear-gradient(90.09deg, #C27500, #BF7204, #C27500, #C27500,#3800AF);
+    }
+    100%{
+        background: linear-gradient(90.09deg, #3800AF, #BF7204, #C27500, #C27500);
+    }
+}
+.header__logo{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    animation: logoAnime 5s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes logoAnime {
+    1%{
+        width: 1px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+.intro-content{
+    background: rgba(7, 15, 25, 0.75);
+    animation: introAnime 2s linear 1;
+}
+
+@keyframes introAnime {
+    1%{
+        background: rgba(7, 15, 25, 0.1);
+    }
+    25%{
+        background: rgba(7, 15, 25, 0.25);
+    }
+    50%{
+        background: rgba(7, 15, 25, 0.45);
+    }
+    75%{
+        background: rgba(7, 15, 25, 0.60);
+    }
+    100%{
+        background: rgba(7, 15, 25, 0.75);
+    }
+}
+
+.intro__title, .intro__text, .intro__btn{
+    animation: textAnime 2s linear 1;
+}
+@keyframes textAnime {
+    1%{
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.title{
+    animation: titleAnime 3s linear infinite;
+}
+@keyframes titleAnime {
+    1%{
+        color: #F18128;
+        border-bottom: 2px solid #F18128;
+    }
+    25%{
+        color: #f1dd28;
+        border-bottom: 2px solid #f1dd28;
+    }
+    50%{
+        color: #82f128;
+        border-bottom: 2px solid #82f128;
+    }
+    75%{
+        color: #2857f1;
+        border-bottom: 2px solid #2857f1;
+    }
+    100%{
+        color: #f12886;
+        border-bottom: 2px solid #f12886;
+    }
+}
+.film-content{
+    transition: .3s;
+}
+.film-content:hover{
+    transform: scale(1.2);
+}
+.collect__info{
+    transition: .3s;
+}
+.collect__box:hover>.collect__info{
+    transform: scale(1.3);
+}
+.series__info{
+    transition: 3s;
+}
+.series__box:hover>.series__info{
+    display: none;
+}
